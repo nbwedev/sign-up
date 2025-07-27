@@ -7,90 +7,88 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="main">
-      <div class="column">
-        <img src="./img/bg.jpg" alt="green leaves" />
-
-        <div class="banner"></div>
-
-        <div class="photo-credit">
-          Photo by
-          <a
-            href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA"
-            >Hallie West</a
-          >on <a href="https://unsplash.com/">Unsplash</a>
+    <!-- Used BEM in naming convention for easier tracing -->
+    <div class="signup">
+      <div class="signup_left-panel">
+        <div class="signup_banner">
+          <img src="./img/odin-lined.png" alt="TOP Logo" />
+          <p>ODIN</p>
+          <div class="signup_footer">
+            <p>
+              &copy; 2025
+              <a href="https://github.com/nbwedev/sign-up">neilbe.dev</a>
+            </p>
+          </div>
         </div>
       </div>
 
-      <div class="hero-text">
-        <p>
-          This is not a real online service! You know you need something like
-          this in your life to help you realize your deepest dreams.
+      <div class="signup_right-panel">
+        <div class="signup_header-text">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+            reprehenderit repellat delectus quo modi. Exercitationem sunt
+            deserunt nihil rerum, at in accusamus veniam adipisci voluptate,
+            dolorum, pariatur quo ex neque?
 
-          <br />Sign up <em>now</em> to get started. <br />
+            <br />
 
-          <br />You <em>know</em> you want to. <br />
-        </p>
-      </div>
-
-      <div class="form-container">
-        <div>
-          <label for="first_name">First Name:</label>
-          <!-- TO DO: Make sure placeholder texts are grayed out -->
-          <input
-            type="text"
-            name="first_name"
-            placeholder="Thor"
-            id="first_name"
-          />
+            Lorem <em>ipsum</em> dolor sit amet.
+          </p>
         </div>
 
-        <div>
-          <label for="last_name">Last Name:</label>
-          <input
-            type="text"
-            name="last_name"
-            placeholder="Odinson"
-            id="last_name"
-          />
+        <div class="signup_intro">
+          <p class="signup_headline">Let's do this!</p>
         </div>
 
-        <div>
-          <label for="email">Email:</label>
+        <form class="signup_form" action="#" method="post">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="first_name">First Name:</label>
+              <input type="text" id="first_name" name="first_name" required />
+            </div>
+            <div class="form-group">
+              <label for="last_name">Last Name:</label>
+              <input type="text" id="last_name" name="last_name" required />
+            </div>
+          </div>
 
-          <input
-            type="text"
-            name="email"
-            placeholder="name@example.com"
-            id="email"
-          />
-        </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="phone-number">Phone Number:</label>
+              <input type="number" id="phone-number" name="number" required />
+            </div>
+          </div>
 
-        <div>
-          <label for="phone_number">Phone Number:</label>
-          <input
-            type="text"
-            name="phone_number"
-            placeholder="(xxx) xxx-xxxx"
-            id="phone_number"
-          />
-        </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" />
+            </div>
+            <div class="form-group">
+              <label for="confirm-password">Confirm password:</label>
+              <input
+                type="password"
+                id="confirm-password"
+                name="confirm-password"
+              />
+            </div>
+          </div>
 
-        <div>
-          <label for="email">Password:</label>
+          <div class="form-submit">
+            <button type="submit" class="signup_submit-btn">
+              Create Account
+            </button>
 
-          <input
-            type="text"
-            name="email"
-            placeholder="Must have at least 8 characters"
-            id="email"
-          />
-        </div>
-
-        <div>
-          <label for="password">Confirm password:</label>
-          <input type="text" name="password" placeholder="" id="password" />
-        </div>
+            <p class="cta-submit">
+              Already have an account?
+              <a href="https://www.theodinproject.com/">Log in</a>
+            </p>
+          </div>
+        </form>
       </div>
     </div>
   </body>
