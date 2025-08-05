@@ -12,11 +12,14 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   min-height: 100vh;
+  /* Removed display: flex re: causing layout issues */
 }
 /* Main containers */
 .signup {
   display: flex;
   min-height: 100vh;
+  width: 100%;
+  /* Added width to take full width */
 }
 
 .signup_left-panel {
@@ -30,7 +33,7 @@ body {
   align-items: center;
   justify-content: center;
 }
-
+/* Changed width to 55% ensuring both panels equals 100% */
 .signup_right-panel {
   width: 55%;
   display: flex;
